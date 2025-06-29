@@ -1,2 +1,3 @@
-# OSRS-NPC-Scraper
-Scrape OSRS Wiki NPC pages
+# OSRS NPC Scraper
+
+Tool to scrape OSRS Wiki NPC pages.
