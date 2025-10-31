@@ -1,0 +1,13 @@
+services:
+  redis:
+    image: redis
+    restart: always
+    env_file:
+      - ./backend/.env${APP_ENV:+.${APP_ENV}}
+    ports:
+      - ${redis_port:-6379}:6379
+    volumes:
+      - ./redis-data:/data
+    networks:
+      - invoice-extraction-system-network
+    command: redis-server --appendonly yes --appendfsync everysec
