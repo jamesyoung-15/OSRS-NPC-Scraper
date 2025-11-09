@@ -3,11 +3,15 @@ services:
     image: redis
     restart: always
     env_file:
-      - ./backend/.env${APP_ENV:+.${APP_ENV}}
+      - .env
     ports:
-      - ${redis_port:-6379}:6379
+      - ${REDIS_PORT:-6379}:6379
     volumes:
       - ./redis-data:/data
     networks:
-      - invoice-extraction-system-network
+      - osrs-npc-scraper-network
     command: redis-server --appendonly yes --appendfsync everysec
+
+networks:
+  osrs-npc-scraper-network:
+    driver: bridge
