@@ -277,9 +277,7 @@ class WikiNPCSpider:
 
         logger.info("Starting NPC Scraper Spider")
         logger.info("1. Starting crawl of NPC list pages to populate queue")
-        queue_result = await self.crawl_npc_list(
-            self.start_url, max_pages=max_pages
-        )
+        queue_result = await self.crawl_npc_list(self.start_url, max_pages=max_pages)
 
         logger.info("2. Starting crawl of all NPC pages from queue")
         crawl_result = await self.crawl_all_npcs(max_npcs=max_npcs)
