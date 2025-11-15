@@ -1,6 +1,5 @@
-from datetime import datetime
 
-from sqlalchemy import create_engine, Column, Integer, String, DateTime, Text, Engine
+from sqlalchemy import create_engine, Engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 

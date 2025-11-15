@@ -1,4 +1,3 @@
-import asyncio
 from urllib.parse import urljoin
 from typing import Optional
 

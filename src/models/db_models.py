@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from sqlalchemy import Column, Integer, String, DateTime, Text, Boolean
+from sqlalchemy import Integer, String, DateTime, Text, Boolean
 from sqlalchemy.orm import mapped_column, Mapped
 
 from src.storage.sql_db import SQLITE_BASE

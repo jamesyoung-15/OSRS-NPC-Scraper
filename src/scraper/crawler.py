@@ -1,6 +1,5 @@
-from typing import Optional, List, Tuple
+from typing import Optional
 from urllib.parse import urljoin
-import asyncio
 from pathlib import Path
 
 from bs4 import BeautifulSoup

@@ -2,7 +2,6 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 from typing import Optional
 
-from sqlalchemy.orm import Session, mapped_column
 
 from src.models.db_models import CrawledPage
 from src.storage.sql_db import get_engine, get_session_factory, create_tables

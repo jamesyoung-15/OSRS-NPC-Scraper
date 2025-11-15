@@ -1,6 +1,5 @@
 from pathlib import Path
 from typing import Optional
-from datetime import datetime, timezone
 
 from config.settings import settings
 from src.utils.logger import setup_logger

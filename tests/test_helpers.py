@@ -1,5 +1,3 @@
-from pathlib import Path
-import pytest
 
 from src.utils.helpers import url_to_filename, extract_npc_name_from_url
 

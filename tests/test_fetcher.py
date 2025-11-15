@@ -1,4 +1,3 @@
-import httpx
 import pytest
 
 from src.scraper.fetcher import FetchError, URLFetcher

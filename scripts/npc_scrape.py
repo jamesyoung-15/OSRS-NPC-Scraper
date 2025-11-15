@@ -3,7 +3,6 @@ from typing import Optional
 import argparse
 
 from src.scraper.crawler import WikiNPCSpider
-from src.scraper.url_manager import URLManager
 from src.utils.logger import setup_logger
 
 logger = setup_logger(__name__)
